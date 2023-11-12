@@ -41,7 +41,7 @@ def plot_efficiencies(func_list: List[Callable], var_iter: str, value_iter: List
     """
     Plots the efficiencies compiled by benchmark_comparison
     """
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(7,7))
 
     dict_benchmarks = benchmark_comparison(
         func_list=func_list,
